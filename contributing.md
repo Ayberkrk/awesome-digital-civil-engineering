@@ -13,7 +13,7 @@ Thanks for considering a contribution. Before opening a pull request, please che
 Add your entry to the correct section, in this format:
 
 ```markdown
-- [Project Name](https://github.com/owner/repo). One or two sentences describing what it does and why it belongs in this list, written in your own words rather than copied from the project's README.
+- [Project Name](https://github.com/owner/repo#readme) - One or two sentences describing what it does and why it belongs in this list, written in your own words rather than copied from the project's README.
 ```
 
 Keep descriptions factual and neutral. Do not use marketing language.
