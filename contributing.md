@@ -21,3 +21,14 @@ Keep descriptions factual and neutral. Do not use marketing language.
 ## Adding a new section
 
 If your project does not fit any existing section and you believe there are enough related projects to justify a new one, open an issue first to discuss scope before submitting a pull request.
+
+## Checking your changes before opening a pull request
+
+This repository runs [awesome-lint](https://github.com/sindresorhus/awesome-lint) in CI to catch structural and formatting issues (table of contents, heading order, duplicate links, entry format) on every push and pull request. Run it locally before submitting:
+
+```bash
+npm install
+npm run lint
+```
+
+Also check that every link you added actually resolves; the link checker workflow in this repository does this automatically on pull requests too.
