@@ -38,11 +38,11 @@ If your project does not fit any existing section and you believe there are enou
 
 ## Checking your changes before opening a pull request
 
-This repository runs [awesome-lint](https://github.com/sindresorhus/awesome-lint) in CI to catch structural and formatting issues (table of contents, heading order, duplicate links, entry format) on every push and pull request. Run it locally before submitting:
+CI runs [awesome-lint](https://github.com/sindresorhus/awesome-lint) on pushes and pull requests. Run the style check before submitting:
 
 ```bash
-npm install
+npm ci
 npm run lint
 ```
 
-Also check that every link you added actually resolves; the link checker workflow in this repository does this automatically on pull requests too.
+The link checker runs separately on pull requests and every Tuesday.
