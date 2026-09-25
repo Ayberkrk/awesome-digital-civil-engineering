@@ -8,6 +8,20 @@ Thanks for considering a contribution. Before opening a pull request, please che
 4. **Not a duplicate.** Search the existing list first. If a very similar project already exists, explain in the PR description why the new one is a better fit or a meaningful addition.
 5. **Maintained, or clearly still useful.** Actively maintained projects are preferred. An unmaintained project can still be included if it remains the best or only open source option for its niche, note this in your PR description.
 
+## Evidence for proposed entries
+
+Include these links or notes in the pull request description so reviewers
+can check the proposal efficiently:
+
+- Link directly to the project's license file or official license statement.
+- Link to documentation that explains the project's purpose and how to use it.
+- Note a recent release or maintenance activity. If the project is no longer
+  maintained, explain why it remains useful for this list.
+- Confirm that you checked the existing list for duplicates.
+
+These checks support human review. They do not replace a review of the
+license terms or guarantee that a project is legally compatible.
+
 ## Format
 
 Add your entry to the correct section, in this format:
