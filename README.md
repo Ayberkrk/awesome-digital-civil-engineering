@@ -196,10 +196,17 @@ This category is still thin compared to the rest of the list. If you know of a m
 
 ## Learning Resources
 
+- [MUDE](https://github.com/TUDelft-MUDE/book#readme) - Open textbook for Modelling, Uncertainty and Data for Engineers, a core module of the civil engineering and geosciences master programs at TU Delft. Covers numerical modeling, probability, reliability and data analysis with worked Python examples.
+- [comet-fenicsx](https://github.com/bleyerj/comet-fenicsx#readme) - Numerical tours of computational mechanics with FEniCSx, worked examples from linear elasticity, beams and plates to plasticity, buckling and dynamics.
+- [CE394M](https://github.com/kks32-courses/ce394m#readme) - Notebooks for the UT Austin course on advanced analysis in geotechnical engineering, covering the finite element method, constitutive models and consolidation.
+- [soil_mechanics](https://github.com/AppliedMechanics-EAFIT/soil_mechanics#readme) - Notes and interactive notebooks for the undergraduate soil mechanics course at EAFIT University, organized as a Jupyter Book. In Spanish.
+- [slope_stability](https://github.com/AppliedMechanics-EAFIT/slope_stability#readme) - Digital book and reproducible tools for the graduate slope stability course at EAFIT University. In Spanish.
+- [Hydro-Informatics](https://github.com/hydro-informatics/jupyter-python-course#readme) - Notebooks behind the Python courses on hydro-informatics.com, written for water resources and hydraulic engineers.
+- [Introduction to GIS Programming](https://github.com/giswqs/geog-312#readme) - University of Tennessee course on GIS programming with Python and open source geospatial libraries.
 - [Automating GIS Processes](https://github.com/Automating-GIS-processes/site#readme) - University of Helsinki course on geospatial analysis in Python, with lessons and exercises as notebooks.
 - [Geocomputation with Python](https://github.com/geocompx/geocompy#readme) - Open source book on working with vector and raster geographic data in Python.
 
-Open course material for structural, geotechnical and hydraulic engineering is still missing here, pull requests are welcome.
+Open course material for earthquake engineering, structural dynamics and BIM is still missing here, pull requests are welcome.
 
 ## Turkiye
 
