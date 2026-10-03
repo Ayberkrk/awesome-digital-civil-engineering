@@ -1,0 +1,8 @@
+# Problems the monthly health check should not report again.
+# One entry per line: owner/repo  check  reason
+# check is one of: archived, moved, license, stale
+
+matsim-org/matsim-libs             license  GPL license file lives in matsim/LICENSE, not the repository root
+USEPA/Stormwater-Management-Model  license  Released in the public domain, stated in the README
+
+# TODO: decide on the stale entries reported by the first run (see the pull request).
