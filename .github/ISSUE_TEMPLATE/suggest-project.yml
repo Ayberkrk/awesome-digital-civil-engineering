@@ -1,0 +1,45 @@
+name: Suggest a project
+description: Propose an open source project or dataset for the list.
+title: "Add: "
+labels: ["enhancement"]
+body:
+  - type: input
+    id: link
+    attributes:
+      label: Project link
+      placeholder: https://github.com/owner/repo
+    validations:
+      required: true
+  - type: input
+    id: section
+    attributes:
+      label: Section
+      description: The section of the list it belongs to. If none fits, say so and explain.
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What it does and why it belongs here
+      description: One or two factual sentences in your own words.
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: License
+      description: Link to the license file or official license statement.
+    validations:
+      required: true
+  - type: textarea
+    id: maintenance
+    attributes:
+      label: Maintenance
+      description: A recent release or commit activity. If the project is unmaintained, explain why it is still worth listing.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched the list and this project is not already included.
+          required: true

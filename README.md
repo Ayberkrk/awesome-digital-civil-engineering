@@ -2,6 +2,8 @@
 
 A curated list of open source tools, libraries, datasets and projects at the intersection of civil and infrastructure engineering, structural and geotechnical engineering, water and hydraulics, geospatial analysis, reality capture, BIM and digital twins. Global projects, plus a dedicated section for Turkiye.
 
+English | [Türkçe](README.tr.md)
+
 **Inclusion criteria:** every project listed here must be open source, relevant to civil or infrastructure engineering (or a directly adjacent discipline such as geospatial analysis or earthquake engineering), and maintained or documented well enough that a newcomer can tell what it does and how to run it.
 
 ## Contents

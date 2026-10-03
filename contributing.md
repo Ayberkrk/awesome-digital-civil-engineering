@@ -32,6 +32,8 @@ Add your entry to the correct section, in this format:
 
 Keep descriptions factual and neutral. Do not use marketing language.
 
+Add new entries to `README.md` only. The Turkish translation in `README.tr.md` is kept in sync by the maintainers.
+
 ## Adding a new section
 
 If your project does not fit any existing section and you believe there are enough related projects to justify a new one, open an issue first to discuss scope before submitting a pull request.
