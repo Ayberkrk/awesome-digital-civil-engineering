@@ -94,6 +94,54 @@ class TranslationDriftTest(unittest.TestCase):
         self.assertNotIn("#section", "".join(check_health.translation_drift(self.SOURCE, "")))
 
 
+class TagTest(unittest.TestCase):
+    def tag(self, section="Structural Analysis and FEM", overrides=None, **data):
+        return check_health.expected_tag(section, "owner/repo", repo_data(**data), overrides or {})
+
+    def test_language_and_license_from_api(self):
+        self.assertEqual(self.tag(language="Python"), "Python, MIT")
+
+    def test_datasets_and_courses_carry_license_only(self):
+        self.assertEqual(self.tag("Open Datasets", language="Python"), "MIT")
+        self.assertEqual(self.tag("Learning Resources", language="TeX"), "MIT")
+
+    def test_related_lists_are_untagged(self):
+        self.assertEqual(self.tag("Related Awesome Lists", language="Python"), "")
+
+    def test_unclassified_license_needs_an_override(self):
+        self.assertIsNone(self.tag(language="C++", license={"spdx_id": "NOASSERTION"}))
+        self.assertIsNone(self.tag(language="C++", license=None))
+
+    def test_overrides_replace_api_values(self):
+        overrides = {("owner/repo", "license"): "BSD-2-Clause", ("owner/repo", "language"): "Python"}
+        found = self.tag(overrides=overrides, language="HTML", license={"spdx_id": "NOASSERTION"})
+        self.assertEqual(found, "Python, BSD-2-Clause")
+
+    def test_language_none_gives_license_only(self):
+        overrides = {("owner/repo", "language"): "none"}
+        self.assertEqual(self.tag(overrides=overrides, language="HTML"), "MIT")
+
+    def test_current_tag_reads_the_last_sentence(self):
+        line = "- [A](https://github.com/o/a#readme) - Does a thing. Formerly named B. C++, GPL-2.0-or-later."
+        self.assertEqual(check_health.current_tag(line), "C++, GPL-2.0-or-later")
+        self.assertEqual(check_health.current_tag("- [A](https://x.org) - Does a thing. CC-BY-4.0."), "CC-BY-4.0")
+
+    def test_current_tag_ignores_ordinary_sentences(self):
+        for ending in ("Formerly named PyNite.", "In Spanish.", "Last updated in 2024.", "Built on section-properties, see above."):
+            line = f"- [A](https://github.com/o/a#readme) - Does a thing. {ending}"
+            self.assertIsNone(check_health.current_tag(line), ending)
+
+    def test_wrong_or_missing_tag_is_reported(self):
+        data = repo_data(language="Python")
+        run = lambda tags: [c for c, _ in check_health.problems_for("Tools", "owner/repo", data, NOW, tags, {})]
+        self.assertEqual(run({"owner/repo": "Python, MIT"}), [])
+        self.assertEqual(run({"owner/repo": "Python, GPL-3.0"}), ["tag"])
+        self.assertEqual(run({"owner/repo": None}), ["tag"])
+
+    def test_repository_overrides_file_is_valid(self):
+        self.assertTrue(check_health.read_overrides())
+
+
 class FileReadingTest(unittest.TestCase):
     def write(self, text):
         handle = tempfile.NamedTemporaryFile("w", suffix=".txt", delete=False, encoding="utf-8")
