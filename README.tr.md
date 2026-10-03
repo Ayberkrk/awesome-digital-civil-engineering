@@ -198,10 +198,17 @@ Bu bölüm listenin geri kalanına göre hâlâ zayıf. Bakımı yapılan, belge
 
 ## Öğrenme kaynakları
 
+- [MUDE](https://github.com/TUDelft-MUDE/book#readme) - TU Delft inşaat mühendisliği ve yer bilimleri yüksek lisans programlarının temel modülü olan Modelling, Uncertainty and Data for Engineers için açık ders kitabı. Sayısal modelleme, olasılık, güvenilirlik ve veri analizini çözümlü Python örnekleriyle işler.
+- [comet-fenicsx](https://github.com/bleyerj/comet-fenicsx#readme) - FEniCSx ile hesaplamalı mekanik üzerine sayısal turlar, doğrusal elastisite, kirişler ve plaklardan plastisite, burkulma ve dinamiğe uzanan çözümlü örnekler.
+- [CE394M](https://github.com/kks32-courses/ce394m#readme) - UT Austin'in geoteknik mühendisliğinde ileri analiz dersinin not defterleri, sonlu eleman yöntemini, bünye modellerini ve konsolidasyonu kapsar.
+- [soil_mechanics](https://github.com/AppliedMechanics-EAFIT/soil_mechanics#readme) - EAFIT Üniversitesi lisans zemin mekaniği dersi için Jupyter Book olarak düzenlenmiş notlar ve etkileşimli not defterleri. Dili İspanyolca.
+- [slope_stability](https://github.com/AppliedMechanics-EAFIT/slope_stability#readme) - EAFIT Üniversitesi lisansüstü şev stabilitesi dersi için dijital kitap ve tekrarlanabilir araçlar. Dili İspanyolca.
+- [Hydro-Informatics](https://github.com/hydro-informatics/jupyter-python-course#readme) - hydro-informatics.com üzerindeki Python derslerinin arkasındaki not defterleri, su kaynakları ve hidrolik mühendisleri için yazılmıştır.
+- [Introduction to GIS Programming](https://github.com/giswqs/geog-312#readme) - Tennessee Üniversitesi'nin Python ve açık kaynak coğrafi kütüphanelerle GIS programlama dersi.
 - [Automating GIS Processes](https://github.com/Automating-GIS-processes/site#readme) - Helsinki Üniversitesi'nin Python ile coğrafi analiz dersi, dersler ve alıştırmalar not defteri olarak sunulur.
 - [Geocomputation with Python](https://github.com/geocompx/geocompy#readme) - Python'da vektör ve raster coğrafi veriyle çalışma üzerine açık kaynak kitap.
 
-Yapı, geoteknik ve hidrolik mühendisliği için açık ders malzemesi burada hâlâ eksik, pull request'ler memnuniyetle karşılanır.
+Deprem mühendisliği, yapı dinamiği ve BIM için açık ders malzemesi burada hâlâ eksik, pull request'ler memnuniyetle karşılanır.
 
 ## Türkiye
 
