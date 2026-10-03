@@ -3,7 +3,7 @@
   "private": true,
   "description": "Lint tooling for the awesome-digital-civil-engineering list",
   "scripts": {
-    "lint": "awesome-lint"
+    "lint": "awesome-lint README.md"
   },
   "devDependencies": {
     "awesome-lint": "^2.3.0"

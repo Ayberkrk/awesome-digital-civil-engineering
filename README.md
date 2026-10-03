@@ -198,7 +198,6 @@ This category is still thin compared to the rest of the list. If you know of a m
 - [LTPP InfoPave](https://infopave.fhwa.dot.gov/) - Long Term Pavement Performance program data on pavement structure, traffic, climate and distress.
 - [xBD](https://xview2.org/) - Satellite image pairs from before and after disasters with building damage labels, the dataset behind the xView2 challenge.
 - [SDNET2018](https://digitalcommons.usu.edu/all_datasets/48/) - Over 56,000 annotated images of cracked and intact concrete bridge decks, walls and pavements.
-- [munich-bridge-data](https://github.com/imcs-compsim/munich-bridge-data#readme) - Real test-bridge sensor data with acceleration, strain, force and inclination measurements, plus Python and MATLAB routines for preprocessing, visualization and analysis. MIT.
 - [OpenTopography](https://opentopography.org/) - Portal for high resolution topography, hosts lidar point clouds and global elevation models.
 
 ## Learning Resources
