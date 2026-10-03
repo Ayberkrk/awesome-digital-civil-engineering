@@ -27,8 +27,10 @@ license terms or guarantee that a project is legally compatible.
 Add your entry to the correct section, in this format:
 
 ```markdown
-- [Project Name](https://github.com/owner/repo#readme) - One or two sentences describing what it does and why it belongs in this list, written in your own words rather than copied from the project's README.
+- [Project Name](https://github.com/owner/repo#readme) - One or two sentences describing what it does and why it belongs in this list, written in your own words rather than copied from the project's README. Python, MIT.
 ```
+
+End the entry with a short tag sentence that gives the main language and the license as an SPDX identifier, for example `Python, MIT.` or `C++, GPL-3.0.`. Entries in Open Datasets and Learning Resources carry the license only, entries that are not hosted on GitHub carry no tag. The monthly health check compares each tag with what GitHub reports. If GitHub cannot classify the license, add the value you read from the license file to `.github/tag-overrides.txt`. Maintainers can rewrite all tags with `python3 scripts/update_tags.py`.
 
 Keep descriptions factual and neutral. Do not use marketing language.
 
@@ -55,7 +57,7 @@ On a branch that has not been pushed yet, the lint run can fail with `Awesome li
 git config branch.<branch>.remote origin
 ```
 
-If you change `scripts/check_health.py` or `.github/health-ignore.txt`, run the tests as well:
+If you change anything under `scripts/` or the health check files under `.github/`, run the tests as well:
 
 ```bash
 python3 -m unittest discover -s tests -v

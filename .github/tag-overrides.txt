@@ -1,0 +1,63 @@
+# Values for the "Language, License." tag that cannot be read from the GitHub API.
+# One entry per line: owner/repo  field  value
+# field is one of: language, license. Use "language none" for a license only tag.
+
+# Licenses GitHub cannot classify, read from the license files (see issue 17).
+OpenSees/OpenSees                             license   Custom
+zhuminjie/OpenSeesPy                          license   Custom
+orhanayd/kandilli-rasathanesi-api             license   Custom
+KratosMultiphysics/Kratos                     license   BSD-4-Clause
+NHERI-SimCenter/quoFEM                        license   BSD-2-Clause
+NHERI-SimCenter/pelicun                       license   BSD-3-Clause
+NHERI-SimCenter/R2DTool                       license   BSD-3-Clause
+NHERI-SimCenter/BrailsPlusPlus                license   BSD-3-Clause
+DIUx-xView/xView2_baseline                    license   BSD-3-Clause
+obspy/obspy                                   license   LGPL-3.0
+openmodal/OpenModal                           license   GPL-3.0
+xBimTeam/XbimEssentials                       license   CDDL-1.0
+buildingSMART/IFC4.x-development              license   CC-BY-ND-4.0
+specklesystems/speckle-server                 license   Apache-2.0
+CadQuery/cadquery                             license   Apache-2.0
+LibreCAD/LibreCAD                             license   GPL-2.0
+colmap/colmap                                 license   BSD-3-Clause
+alicevision/Meshroom                          license   MPL-2.0
+PDAL/PDAL                                     license   BSD-3-Clause
+laspy/laspy                                   license   BSD-2-Clause
+isl-org/Open3D                                license   MIT
+CloudCompare/CloudCompare                     license   GPL-2.0-or-later
+potree/potree                                 license   BSD-2-Clause
+OSGeo/gdal                                    license   MIT
+OSGeo/grass                                   license   GPL-2.0-or-later
+rasterio/rasterio                             license   BSD-3-Clause
+USEPA/WNTR                                    license   BSD-3-Clause
+USEPA/Stormwater-Management-Model             license   Public-Domain
+pyswmm/pyswmm                                 license   BSD-2-Clause
+anuga-community/anuga_core                    license   Apache-2.0
+MODFLOW-ORG/modflow6                          license   CC0-1.0
+modflowpy/flopy                               license   CC0-1.0
+matsim-org/matsim-libs                        license   GPL-2.0-or-later
+NatLabRockies/EnergyPlus                      license   BSD-3-Clause-style
+NatLabRockies/OpenStudio                      license   BSD-3-Clause-style
+microsoft/GlobalMLBuildingFootprints          license   CDLA-Permissive-2.0
+gem/global_exposure_model                     license   CC-BY-NC-SA-4.0
+geocompx/geocompy                             license   CC-BY-NC-SA-4.0
+DemirAydin/AFAD-TADAS-EQ-Record-Processing    license   MIT
+
+# Primary language reported by GitHub is notebooks, docs or assets, not the code people use.
+connorferster/handcalcs                       language  Python
+seisbench/seisbench                           language  Python
+snakesonabrain/groundhog                      language  Python
+JesseBonanno/PySlope                          language  Python
+ladisk/pyEMA                                  language  Python
+wassimj/topologicpy                           language  Python
+ActivitySim/activitysim                       language  Python
+sekilab/RoadDamageDetector                    language  Python
+brightway-lca/brightway25                     language  Python
+CLIMADA-project/climada_python                language  Python
+DemirAydin/AFAD-TADAS-EQ-Record-Processing    language  Python
+yunjunz/2023-Turkey-EQ                        language  Python
+zhuminjie/OpenSeesPy                          language  Python
+xeokit/xeokit-sdk                             language  JavaScript
+eclipse-sumo/sumo                             language  C++
+buildingSMART/IFC4.x-development              language  none
+acikyazilimagi/afet-org                       language  none
