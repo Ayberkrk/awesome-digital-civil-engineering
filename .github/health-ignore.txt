@@ -5,4 +5,9 @@
 matsim-org/matsim-libs             license  GPL license file lives in matsim/LICENSE, not the repository root
 USEPA/Stormwater-Management-Model  license  Released in the public domain, stated in the README
 
-# TODO: decide on the stale entries reported by the first run (see the pull request).
+openmodal/OpenModal                stale    Only complete open source EMA application, noted as unmaintained in the entry
+acikyazilimagi/afet-org            stale    Historical record of the 2023 earthquake response, not expected to change
+DIUx-xView/xView2_baseline         stale    Reference code for a finished challenge
+eng-tools/eqsig                    stale    Small, feature complete library
+rdno/tdvms_py                      stale    Small client for the AFAD TDVMS portal, which is still online
+muhammedsural/TSC2018_Design       stale    Only open Python package for TBDY 2018, last update noted in the entry
