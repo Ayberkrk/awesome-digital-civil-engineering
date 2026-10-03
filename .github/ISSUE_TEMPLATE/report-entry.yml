@@ -1,0 +1,32 @@
+name: Report a problem with an entry
+description: A listed project is archived, moved, relicensed, described incorrectly or no longer fits.
+title: "Entry: "
+labels: ["bug"]
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Entry
+      description: Name of the entry as it appears in the list.
+    validations:
+      required: true
+  - type: dropdown
+    id: problem
+    attributes:
+      label: Problem
+      options:
+        - Archived or abandoned
+        - Moved to a new address
+        - No longer open source or license changed
+        - Description is wrong or outdated
+        - Does not fit the scope of the list
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: What is wrong and, if you know it, what the entry should say instead. Links help.
+    validations:
+      required: true
