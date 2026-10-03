@@ -84,6 +84,10 @@ English | [Türkçe](README.tr.md)
 - [SDyPy](https://github.com/sdypy/sdypy#readme) - Umbrella package for structural dynamics in Python that bundles modal analysis, frequency response and excitation tools under one namespace. Python, MIT.
 - [pyEMA](https://github.com/ladisk/pyEMA#readme) - Experimental and operational modal analysis from measured frequency response functions, using the LSCF and LSFD methods. Python, MIT.
 - [pyidi](https://github.com/ladisk/pyidi#readme) - Identifies displacements from high speed camera footage, a base for camera based vibration measurement of structures. Python, MIT.
+- [structural_health_monitoring](https://github.com/MarcoParola/structural_health_monitoring#readme) - Vibration-based structural damage localisation using IoT sensor data and machine learning, including autoencoder and convolutional models. Python, MIT.
+- [FAT-SM](https://github.com/FAT-SM/App#readme) - Fatigue assessment tool for structural monitoring with stress-time processing, rainflow cycle counting, Miner's-rule damage accumulation and remaining fatigue life prediction. C++, GPL-3.0.
+- [munich-bridge-data](https://github.com/imcs-compsim/munich-bridge-data#readme) - Visualisation and analysis routines for real test-bridge sensor data, with sample acceleration, strain, force and inclination measurements and preprocessing tools. Python, MIT.
+- [BridgeScan-SHM](https://github.com/okimsz/BridgeScan-SHM#readme) - Real-time bridge structural health monitoring dashboard with telemetry ingestion, anomaly detection, historical sensor-data storage, WebSocket alerts and an edge inference pipeline. Python/TypeScript, MIT.
 
 This category is still thin compared to the rest of the list. If you know of a maintained, documented open source SHM project, please open a pull request, this is one of the sections where the list can add the most value.
 
@@ -194,6 +198,7 @@ This category is still thin compared to the rest of the list. If you know of a m
 - [LTPP InfoPave](https://infopave.fhwa.dot.gov/) - Long Term Pavement Performance program data on pavement structure, traffic, climate and distress.
 - [xBD](https://xview2.org/) - Satellite image pairs from before and after disasters with building damage labels, the dataset behind the xView2 challenge.
 - [SDNET2018](https://digitalcommons.usu.edu/all_datasets/48/) - Over 56,000 annotated images of cracked and intact concrete bridge decks, walls and pavements.
+- [munich-bridge-data](https://github.com/imcs-compsim/munich-bridge-data#readme) - Real test-bridge sensor data with acceleration, strain, force and inclination measurements, plus Python and MATLAB routines for preprocessing, visualization and analysis. MIT.
 - [OpenTopography](https://opentopography.org/) - Portal for high resolution topography, hosts lidar point clouds and global elevation models.
 
 ## Learning Resources
