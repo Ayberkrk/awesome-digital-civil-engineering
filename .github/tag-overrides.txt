@@ -42,6 +42,8 @@ microsoft/GlobalMLBuildingFootprints          license   CDLA-Permissive-2.0
 gem/global_exposure_model                     license   CC-BY-NC-SA-4.0
 geocompx/geocompy                             license   CC-BY-NC-SA-4.0
 DemirAydin/AFAD-TADAS-EQ-Record-Processing    license   MIT
+Ashim-Paudel/OpenSeesPy-Tutorials             license   MIT
+okimsz/BridgeScan-SHM                         license   MIT
 
 # Primary language reported by GitHub is notebooks, docs or assets, not the code people use.
 connorferster/handcalcs                       language  Python
@@ -56,6 +58,7 @@ brightway-lca/brightway25                     language  Python
 CLIMADA-project/climada_python                language  Python
 DemirAydin/AFAD-TADAS-EQ-Record-Processing    language  Python
 yunjunz/2023-Turkey-EQ                        language  Python
+MarcoParola/structural_health_monitoring      language  Python
 zhuminjie/OpenSeesPy                          language  Python
 xeokit/xeokit-sdk                             language  JavaScript
 eclipse-sumo/sumo                             language  C++

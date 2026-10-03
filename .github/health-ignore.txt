@@ -11,3 +11,7 @@ DIUx-xView/xView2_baseline         stale    Reference code for a finished challe
 eng-tools/eqsig                    stale    Small, feature complete library
 rdno/tdvms_py                      stale    Small client for the AFAD TDVMS portal, which is still online
 muhammedsural/TSC2018_Design       stale    Only open Python package for TBDY 2018, last update noted in the entry
+okimsz/BridgeScan-SHM              license  README states MIT, the repository has no license file
+MarcoParola/structural_health_monitoring  stale  Finished research code, the only damage localisation example in the list
+lviens/Response_spectra            stale    Finished teaching example
+jakob-beetz/ifcopenshell-notebooks stale    Finished teaching notebooks

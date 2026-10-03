@@ -87,7 +87,7 @@ English | [Türkçe](README.tr.md)
 - [structural_health_monitoring](https://github.com/MarcoParola/structural_health_monitoring#readme) - Vibration-based structural damage localisation using IoT sensor data and machine learning, including autoencoder and convolutional models. Python, MIT.
 - [FAT-SM](https://github.com/FAT-SM/App#readme) - Fatigue assessment tool for structural monitoring with stress-time processing, rainflow cycle counting, Miner's-rule damage accumulation and remaining fatigue life prediction. C++, GPL-3.0.
 - [munich-bridge-data](https://github.com/imcs-compsim/munich-bridge-data#readme) - Visualisation and analysis routines for real test-bridge sensor data, with sample acceleration, strain, force and inclination measurements and preprocessing tools. Python, MIT.
-- [BridgeScan-SHM](https://github.com/okimsz/BridgeScan-SHM#readme) - Real-time bridge structural health monitoring dashboard with telemetry ingestion, anomaly detection, historical sensor-data storage, WebSocket alerts and an edge inference pipeline. Python/TypeScript, MIT.
+- [BridgeScan-SHM](https://github.com/okimsz/BridgeScan-SHM#readme) - Real-time bridge structural health monitoring dashboard with telemetry ingestion, anomaly detection, historical sensor-data storage, WebSocket alerts and an edge inference pipeline. TypeScript, MIT.
 
 This category is still thin compared to the rest of the list. If you know of a maintained, documented open source SHM project, please open a pull request, this is one of the sections where the list can add the most value.
 
