@@ -4,6 +4,8 @@ A curated list of open source tools, libraries, datasets and projects at the int
 
 English | [Türkçe](README.tr.md)
 
+![Overview of the open source digital civil engineering list](media/social-preview.png)
+
 **Inclusion criteria:** every project listed here must be open source, relevant to civil or infrastructure engineering (or a directly adjacent discipline such as geospatial analysis or earthquake engineering), and maintained or documented well enough that a newcomer can tell what it does and how to run it.
 
 ## Contents
