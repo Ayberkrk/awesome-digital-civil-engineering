@@ -198,7 +198,6 @@ This category is still thin compared to the rest of the list. If you know of a m
 - [LTPP InfoPave](https://infopave.fhwa.dot.gov/) - Long Term Pavement Performance program data on pavement structure, traffic, climate and distress.
 - [xBD](https://xview2.org/) - Satellite image pairs from before and after disasters with building damage labels, the dataset behind the xView2 challenge.
 - [SDNET2018](https://digitalcommons.usu.edu/all_datasets/48/) - Over 56,000 annotated images of cracked and intact concrete bridge decks, walls and pavements.
-- [munich-bridge-data](https://github.com/imcs-compsim/munich-bridge-data#readme) - Real test-bridge sensor data with acceleration, strain, force and inclination measurements, plus Python and MATLAB routines for preprocessing, visualization and analysis. MIT.
 - [OpenTopography](https://opentopography.org/) - Portal for high resolution topography, hosts lidar point clouds and global elevation models.
 
 ## Learning Resources
@@ -212,8 +211,11 @@ This category is still thin compared to the rest of the list. If you know of a m
 - [Introduction to GIS Programming](https://github.com/giswqs/geog-312#readme) - University of Tennessee course on GIS programming with Python and open source geospatial libraries. CC-BY-4.0.
 - [Automating GIS Processes](https://github.com/Automating-GIS-processes/site#readme) - University of Helsinki course on geospatial analysis in Python, with lessons and exercises as notebooks. MIT.
 - [Geocomputation with Python](https://github.com/geocompx/geocompy#readme) - Open book on working with vector and raster geographic data in Python. Noncommercial use only. CC-BY-NC-SA-4.0.
+- [OpenSeesPy-Tutorials](https://github.com/Ashim-Paudel/OpenSeesPy-Tutorials#readme) - Documented Python tutorials for structural dynamics and earthquake engineering, covering eigen/modal analysis, time-history analysis, pushover, nonlinear analysis and structural modeling. MIT.
+- [Response_spectra](https://github.com/lviens/Response_spectra#readme) - Python and MATLAB examples for computing response spectra from earthquake ground-motion records, including real KiK-net data from the 2011 Tohoku-Oki earthquake. MIT.
+- [ifcopenshell-notebooks](https://github.com/jakob-beetz/ifcopenshell-notebooks#readme) - Interactive Jupyter notebooks for learning IFC processing with IfcOpenShell, covering IFC documentation, model creation and modification, import/export and IFC internals. MIT.
 
-Open course material for earthquake engineering, structural dynamics and BIM is still missing here, pull requests are welcome.
+Open course material for earthquake engineering, structural dynamics and BIM is still growing here. If you know of a documented, openly licensed resource, pull requests are welcome.
 
 ## Turkiye
 
