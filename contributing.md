@@ -51,6 +51,8 @@ npm run lint
 
 The link checker runs separately on pull requests and every Tuesday.
 
+A third check looks at every GitHub entry a pull request adds: the repository must not be archived or moved, must have a detectable license, must have been pushed to within the last two years, and its tag must match what GitHub reports. If it fails for a reason you can explain, say so in the pull request and a maintainer will record the exception.
+
 On a branch that has not been pushed yet, the lint run can fail with `Awesome list must reside in a valid git repository`. The check looks up the remote of the current branch, which is only set after the first push. Push the branch with `git push -u origin <branch>`, or set the remote yourself, and run the lint again:
 
 ```bash
