@@ -2,7 +2,7 @@
 
 Thanks for considering a contribution. Before opening a pull request, please check:
 
-1. **Open source.** The project must have a public repository and an open source license. Commercial or closed source software does not belong here, use [awesome-civil-engineering](https://github.com/QuantumNovice/awesome-civil-engineering) for that.
+1. **Open source.** The project must have a public repository and an open source license. Commercial or closed source software does not belong here, use [awesome-civil-engineering](https://github.com/QuantumNovice/awesome-civil-engineering) for that. A project whose source or content is public under a more restrictive license (for example noncommercial terms) can be listed when it is a field standard or has no open alternative. State the restriction in the entry, as the OpenSees entry does.
 2. **Relevant.** The project must be directly relevant to civil or infrastructure engineering, or to a discipline this list already covers (structural analysis, design code and calculation tools, earthquake engineering, geotechnical engineering, structural health monitoring, BIM, CAD and parametric modeling, digital twins, point clouds and photogrammetry, geospatial analysis, water and hydraulics, urban and infrastructure analytics, construction focused AI and ML, climate and resilience, open datasets used in these fields, or open learning resources for them).
 3. **Documented and usable.** At minimum, the README must explain what the project does and how to install or run it. A research code dump with no explanation will not be merged.
 4. **Not a duplicate.** Search the existing list first. If a very similar project already exists, explain in the PR description why the new one is a better fit or a meaningful addition.
@@ -27,8 +27,10 @@ license terms or guarantee that a project is legally compatible.
 Add your entry to the correct section, in this format:
 
 ```markdown
-- [Project Name](https://github.com/owner/repo#readme) - One or two sentences describing what it does and why it belongs in this list, written in your own words rather than copied from the project's README.
+- [Project Name](https://github.com/owner/repo#readme) - One or two sentences describing what it does and why it belongs in this list, written in your own words rather than copied from the project's README. Python, MIT.
 ```
+
+End the entry with a short tag sentence that gives the main language and the license as an SPDX identifier, for example `Python, MIT.` or `C++, GPL-3.0.`. Entries in Open Datasets and Learning Resources carry the license only, entries that are not hosted on GitHub carry no tag. The monthly health check compares each tag with what GitHub reports. If GitHub cannot classify the license, add the value you read from the license file to `.github/tag-overrides.txt`. Maintainers can rewrite all tags with `python3 scripts/update_tags.py`.
 
 Keep descriptions factual and neutral. Do not use marketing language.
 
@@ -55,7 +57,7 @@ On a branch that has not been pushed yet, the lint run can fail with `Awesome li
 git config branch.<branch>.remote origin
 ```
 
-If you change `scripts/check_health.py` or `.github/health-ignore.txt`, run the tests as well:
+If you change anything under `scripts/` or the health check files under `.github/`, run the tests as well:
 
 ```bash
 python3 -m unittest discover -s tests -v
