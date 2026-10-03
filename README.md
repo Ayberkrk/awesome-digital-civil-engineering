@@ -212,8 +212,11 @@ This category is still thin compared to the rest of the list. If you know of a m
 - [Introduction to GIS Programming](https://github.com/giswqs/geog-312#readme) - University of Tennessee course on GIS programming with Python and open source geospatial libraries. CC-BY-4.0.
 - [Automating GIS Processes](https://github.com/Automating-GIS-processes/site#readme) - University of Helsinki course on geospatial analysis in Python, with lessons and exercises as notebooks. MIT.
 - [Geocomputation with Python](https://github.com/geocompx/geocompy#readme) - Open book on working with vector and raster geographic data in Python. Noncommercial use only. CC-BY-NC-SA-4.0.
+- [OpenSeesPy-Tutorials](https://github.com/Ashim-Paudel/OpenSeesPy-Tutorials#readme) - Documented Python tutorials for structural dynamics and earthquake engineering, covering eigen/modal analysis, time-history analysis, pushover, nonlinear analysis and structural modeling. MIT.
+- [Response_spectra](https://github.com/lviens/Response_spectra#readme) - Python and MATLAB examples for computing response spectra from earthquake ground-motion records, including real KiK-net data from the 2011 Tohoku-Oki earthquake. MIT.
+- [ifcopenshell-notebooks](https://github.com/jakob-beetz/ifcopenshell-notebooks#readme) - Interactive Jupyter notebooks for learning IFC processing with IfcOpenShell, covering IFC documentation, model creation and modification, import/export and IFC internals. MIT.
 
-Open course material for earthquake engineering, structural dynamics and BIM is still missing here, pull requests are welcome.
+Open course material for earthquake engineering, structural dynamics and BIM is still growing here. If you know of a documented, openly licensed resource, pull requests are welcome.
 
 ## Turkiye
 
