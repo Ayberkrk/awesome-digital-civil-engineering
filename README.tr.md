@@ -2,6 +2,8 @@
 
 [English](README.md) | Türkçe
 
+![Açık kaynak dijital inşaat mühendisliği listesine genel bakış](media/social-preview.png)
+
 İnşaat ve altyapı mühendisliği, yapı ve geoteknik mühendisliği, su ve hidrolik, coğrafi analiz, gerçeklik yakalama, BIM ve dijital ikiz alanlarının kesişimindeki açık kaynak araçların, kütüphanelerin, veri setlerinin ve projelerin derlenmiş listesi. Dünya genelindeki projelere ek olarak Türkiye için ayrı bir bölüm içerir.
 
 **Listeye alınma ölçütleri:** burada yer alan her proje açık kaynak olmalı ya da kaynağı veya içeriği herkese açık olup lisans kısıtı girişinde belirtilmelidir. Proje ayrıca inşaat veya altyapı mühendisliğiyle (ya da coğrafi analiz, deprem mühendisliği gibi doğrudan komşu bir disiplinle) ilgili olmalı ve yeni başlayan birinin ne yaptığını ve nasıl çalıştırılacağını anlayabileceği kadar bakımlı veya belgelenmiş olmalıdır.
