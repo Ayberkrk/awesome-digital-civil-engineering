@@ -4,7 +4,7 @@
 
 İnşaat ve altyapı mühendisliği, yapı ve geoteknik mühendisliği, su ve hidrolik, coğrafi analiz, gerçeklik yakalama, BIM ve dijital ikiz alanlarının kesişimindeki açık kaynak araçların, kütüphanelerin, veri setlerinin ve projelerin derlenmiş listesi. Dünya genelindeki projelere ek olarak Türkiye için ayrı bir bölüm içerir.
 
-**Listeye alınma ölçütleri:** burada yer alan her proje açık kaynak olmalı, inşaat veya altyapı mühendisliğiyle (ya da coğrafi analiz, deprem mühendisliği gibi doğrudan komşu bir disiplinle) ilgili olmalı ve yeni başlayan birinin ne yaptığını ve nasıl çalıştırılacağını anlayabileceği kadar bakımlı veya belgelenmiş olmalıdır.
+**Listeye alınma ölçütleri:** burada yer alan her proje açık kaynak olmalı ya da kaynağı veya içeriği herkese açık olup lisans kısıtı girişinde belirtilmelidir. Proje ayrıca inşaat veya altyapı mühendisliğiyle (ya da coğrafi analiz, deprem mühendisliği gibi doğrudan komşu bir disiplinle) ilgili olmalı ve yeni başlayan birinin ne yaptığını ve nasıl çalıştırılacağını anlayabileceği kadar bakımlı veya belgelenmiş olmalıdır.
 
 Bu dosya [README.md](README.md) dosyasının çevirisidir. İkisi arasında fark olursa İngilizce sürüm esas alınır.
 
@@ -31,8 +31,8 @@ Bu dosya [README.md](README.md) dosyasının çevirisidir. İkisi arasında fark
 
 ## Yapısal analiz ve sonlu elemanlar
 
-- [OpenSees](https://github.com/OpenSees/OpenSees#readme) - UC Berkeley'de geliştirilen, doğrusal olmayan yapısal ve geoteknik simülasyon için referans açık kaynak çatı. Akademik deprem mühendisliği araştırma kodlarının çoğunun temeli ve aşağıdaki deprem mühendisliği bölümünde kullanılan ana simülasyon motoru.
-- [OpenSeesPy](https://github.com/zhuminjie/OpenSeesPy#readme) - OpenSees'in pip ile dağıtılan Python yorumlayıcı sürümü, bugün OpenSees modellerini betiklemenin olağan giriş noktası. Kendi lisans koşullarıyla gelir, ticari yeniden dağıtımdan önce okuyun.
+- [OpenSees](https://github.com/OpenSees/OpenSees#readme) - UC Berkeley'de geliştirilen, doğrusal olmayan yapısal ve geoteknik simülasyon için referans çatı. Akademik deprem mühendisliği araştırma kodlarının çoğunun temeli ve aşağıdaki deprem mühendisliği bölümünde kullanılan ana simülasyon motoru. Kaynak kodu herkese açık, ancak lisans kullanımı ticari olmayan ve kurum içi amaçlarla sınırlar, ticari dağıtım için ayrı lisans gerekir.
+- [OpenSeesPy](https://github.com/zhuminjie/OpenSeesPy#readme) - OpenSees'in pip ile dağıtılan Python yorumlayıcı sürümü, bugün OpenSees modellerini betiklemenin olağan giriş noktası. OpenSees ile aynı lisans kısıtlarını taşır.
 - [opstool](https://github.com/yexiang92/opstool#readme) - OpenSeesPy modelleri için ön işlem, son işlem ve görselleştirme yardımcıları, fiber kesit ağı oluşturma ve sonuç çizimi dahil.
 - [ospgrillage](https://github.com/ssp-research/ospgrillage#readme) - OpenSeesPy üzerinde köprü tabliyesi ızgara modelleri kurar, hareketli yük ve yük kombinasyonu desteği vardır.
 - [Pynite](https://github.com/JWock82/Pynite#readme) - Kirişler, çerçeveler, plaklar, yük kombinasyonları ve P Delta analizi için Python'da 3B yapısal sonlu eleman kütüphanesi. Eski adı PyNite.
@@ -95,8 +95,8 @@ Bu bölüm listenin geri kalanına göre hâlâ zayıf. Bakımı yapılan, belge
 - [xeokit SDK](https://github.com/xeokit/xeokit-sdk#readme) - Tarayıcıda büyük BIM ve AEC modelleri için WebGL görüntüleyici araç takımı, IFC, glTF ve nokta bulutu biçimlerini destekler.
 - [BIMserver](https://github.com/opensourceBIM/BIMserver#readme) - Açık kaynak BIM model sunucusu. IFC modellerini sürümleme ve çok kullanıcılı iş birliğiyle saklar ve yönetir.
 - [xBIM Toolkit](https://github.com/xBimTeam/XbimEssentials#readme) - IFC bina modellerini okumak, oluşturmak, doğrulamak ve sorgulamak için açık kaynak .NET araç takımı.
-- [IFC4.x-development](https://github.com/buildingSMART/IFC4.x-development#readme) - buildingSMART'ın IFC4.x şartnamesi için kendi deposu, yukarıdaki her aracın uyguladığı standart.
-- [Speckle](https://github.com/specklesystems/speckle-server#readme) - AEC birlikte çalışabilirliği için açık kaynak veri platformu, tasarım araçları arasında geometri ve veriyi gerçek zamanlı aktarır, sıklıkla BIM için sürüm kontrolü olarak tanımlanır.
+- [IFC4.x-development](https://github.com/buildingSMART/IFC4.x-development#readme) - buildingSMART'ın IFC4.x şartnamesi için kendi deposu, yukarıdaki her aracın uyguladığı standart. CC BY-ND ile yayımlanır, değiştirilmiş sürümler yeniden dağıtılamaz.
+- [Speckle](https://github.com/specklesystems/speckle-server#readme) - AEC birlikte çalışabilirliği için açık kaynak veri platformu, tasarım araçları arasında geometri ve veriyi gerçek zamanlı aktarır, sıklıkla BIM için sürüm kontrolü olarak tanımlanır. Kurumsal lisanslı iki sunucu modülü dışında Apache 2.0.
 - [BHoM](https://github.com/BHoM/BHoM#readme) - Buildings and Habitats object Model, yapısal, çevresel ve BIM yazılımlarını birbirine bağlayan ortak bir veri şeması ve bağdaştırıcı seti.
 - [topologicpy](https://github.com/wassimj/topologicpy#readme) - Binaları analiz için topolojik hücreler, yüzeyler ve çizgeler olarak temsil eden mekansal modelleme kütüphanesi.
 
@@ -186,7 +186,7 @@ Bu bölüm listenin geri kalanına göre hâlâ zayıf. Bakımı yapılan, belge
 - [Global ML Building Footprints](https://github.com/microsoft/GlobalMLBuildingFootprints#readme) - Uydu görüntülerinden türetilmiş, dünyanın büyük bölümü için bina oturum alanı poligonları.
 - [Open Buildings](https://sites.research.google/gr/open-buildings/) - Afrika, Güney ve Güneydoğu Asya, Latin Amerika ve Karayipler için güven puanlı bina oturum alanları.
 - [Overture Maps](https://github.com/OvertureMaps/data#readme) - Bulut yerel biçimlerde binalar, ulaşım ağları, yerler ve idari sınırlar içeren açık harita verisi.
-- [GEM Global Exposure Model](https://github.com/gem/global_exposure_model#readme) - Sismik risk değerlendirmesi için derlenmiş, ülke düzeyinde bina sayıları, yenileme maliyetleri ve yapısal sınıflar.
+- [GEM Global Exposure Model](https://github.com/gem/global_exposure_model#readme) - Sismik risk değerlendirmesi için derlenmiş, ülke düzeyinde bina sayıları, yenileme maliyetleri ve yapısal sınıflar. Lisansı CC BY-NC-SA, yalnızca ticari olmayan kullanım.
 - [GEM Global Active Faults](https://github.com/GEMScienceTools/gem-global-active-faults#readme) - Kayma hızı ve kinematik özniteliklerle uyumlaştırılmış küresel diri fay izleri veritabanı.
 - [STEAD](https://github.com/smousavi05/STEAD#readme) - Stanford Earthquake Dataset, deprem ve gürültü tespiti araştırmaları için etiketlenmiş bir milyondan fazla sismik dalga formu örneği.
 - [Engineering Strong Motion Database](https://esm-db.eu/) - Avrupa ve Orta Doğu'daki depremler için işlenmiş kuvvetli yer hareketi dalga formları ve üst verisi.
@@ -206,7 +206,7 @@ Bu bölüm listenin geri kalanına göre hâlâ zayıf. Bakımı yapılan, belge
 - [Hydro-Informatics](https://github.com/hydro-informatics/jupyter-python-course#readme) - hydro-informatics.com üzerindeki Python derslerinin arkasındaki not defterleri, su kaynakları ve hidrolik mühendisleri için yazılmıştır.
 - [Introduction to GIS Programming](https://github.com/giswqs/geog-312#readme) - Tennessee Üniversitesi'nin Python ve açık kaynak coğrafi kütüphanelerle GIS programlama dersi.
 - [Automating GIS Processes](https://github.com/Automating-GIS-processes/site#readme) - Helsinki Üniversitesi'nin Python ile coğrafi analiz dersi, dersler ve alıştırmalar not defteri olarak sunulur.
-- [Geocomputation with Python](https://github.com/geocompx/geocompy#readme) - Python'da vektör ve raster coğrafi veriyle çalışma üzerine açık kaynak kitap.
+- [Geocomputation with Python](https://github.com/geocompx/geocompy#readme) - Python'da vektör ve raster coğrafi veriyle çalışma üzerine açık kitap. Lisansı CC BY-NC-SA, yalnızca ticari olmayan kullanım.
 
 Deprem mühendisliği, yapı dinamiği ve BIM için açık ders malzemesi burada hâlâ eksik, pull request'ler memnuniyetle karşılanır.
 
@@ -222,7 +222,7 @@ Türkiye'deki açık kaynak inşaat ve altyapı mühendisliği çalışmaları h
 - [TSC2018_Design](https://github.com/muhammedsural/TSC2018_Design#readme) - Türkiye Bina Deprem Yönetmeliği (TBDY 2018) ve TS500 için Python paketi, tasarım spektrumlarını, sargılı beton modellerini ve kolon sargı donatısı tasarımını kapsar. Son güncelleme 2024.
 - [sap2000-tbdy2018](https://github.com/krmsari/sap2000-tbdy2018#readme) - TS500 ve TBDY 2018'e uygun parametrik SAP2000 modelleri üreten açık kaynak Windows uygulaması. Araç açık, SAP2000'in kendisi ticaridir.
 - [2023-Turkey-EQ](https://github.com/yunjunz/2023-Turkey-EQ#readme) - 2023 Kahramanmaraş depreminin ALOS-2, LuTan-1 ve Sentinel-1 radar görüntülerinden elde edilen kosismik yer deformasyonu için not defterleri ve veri.
-- [kandilli-rasathanesi-api](https://github.com/orhanayd/kandilli-rasathanesi-api#readme) - Kandilli Rasathanesi ve AFAD deprem verisini gerçek zamanlı akışlar, GeoJSON çıktısı ve kente veya yakınlığa göre süzmeyle birleştiren ücretsiz, açık kaynak, etkin bakımı yapılan API. Çok sayıdaki AFAD ve Kandilli veri sarmalayıcısı arasında en bakımlı olanı.
+- [kandilli-rasathanesi-api](https://github.com/orhanayd/kandilli-rasathanesi-api#readme) - Kandilli Rasathanesi ve AFAD deprem verisini gerçek zamanlı akışlar, GeoJSON çıktısı ve kente veya yakınlığa göre süzmeyle birleştiren ücretsiz, etkin bakımı yapılan API. Çok sayıdaki AFAD ve Kandilli veri sarmalayıcısı arasında en bakımlı olanı. Kaynak kodu, izinsiz ticari kullanımı yasaklayan özel bir lisansla herkese açık.
 - [tdvms_py](https://github.com/rdno/tdvms_py#readme) - AFAD'ın TDVMS ağından sürekli sismik dalga formu verisi istemek için küçük bir Python betiği, sismoloji ve saha tepkisi araştırmaları için yapı taşı olarak kullanışlıdır.
 
 ## Benzer awesome listeleri
@@ -236,4 +236,4 @@ Bu liste aşağıdakileri bilerek tekrarlamaz. Komşu kapsamlar için onlara gö
 
 ## Katkı
 
-Katkılar memnuniyetle karşılanır. Pull request göndermeden önce lütfen [contributing.md](contributing.md) dosyasını okuyun. Kısaca: proje açık kaynak olmalı, inşaat veya altyapı mühendisliğiyle (ya da doğrudan komşu bir disiplinle) ilgili olmalı ve yeni başlayan birinin ne yaptığını ve nasıl çalıştırılacağını anlayabileceği kadar iyi belgelenmiş olmalıdır. Yeni girişleri yalnızca İngilizce [README.md](README.md) dosyasına eklemeniz yeterlidir, Türkçe çeviri bakımcılar tarafından güncellenir.
+Katkılar memnuniyetle karşılanır. Pull request göndermeden önce lütfen [contributing.md](contributing.md) dosyasını okuyun. Kısaca: proje açık kaynak olmalı (ya da lisans kısıtı girişte belirtilmeli), inşaat veya altyapı mühendisliğiyle (ya da doğrudan komşu bir disiplinle) ilgili olmalı ve yeni başlayan birinin ne yaptığını ve nasıl çalıştırılacağını anlayabileceği kadar iyi belgelenmiş olmalıdır. Yeni girişleri yalnızca İngilizce [README.md](README.md) dosyasına eklemeniz yeterlidir, Türkçe çeviri bakımcılar tarafından güncellenir.

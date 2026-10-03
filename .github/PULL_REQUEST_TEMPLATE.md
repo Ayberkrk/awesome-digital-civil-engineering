@@ -13,7 +13,7 @@
 
 ## Checklist
 
-- [ ] The project is open source and relevant to the scope described in `contributing.md`.
+- [ ] The project is open source, or its license restriction is stated in the entry, and it is relevant to the scope described in `contributing.md`.
 - [ ] I searched the list and this is not a duplicate.
 - [ ] The entry follows the format `- [Name](link) - Description.` and the description is in my own words.
 - [ ] I added the entry to `README.md` only (the Turkish translation is updated by the maintainers).

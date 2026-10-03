@@ -4,7 +4,7 @@ A curated list of open source tools, libraries, datasets and projects at the int
 
 English | [Türkçe](README.tr.md)
 
-**Inclusion criteria:** every project listed here must be open source, relevant to civil or infrastructure engineering (or a directly adjacent discipline such as geospatial analysis or earthquake engineering), and maintained or documented well enough that a newcomer can tell what it does and how to run it.
+**Inclusion criteria:** every project listed here must be open source, or have its source or content publicly available with any license restriction stated in its entry. It must be relevant to civil or infrastructure engineering (or a directly adjacent discipline such as geospatial analysis or earthquake engineering) and maintained or documented well enough that a newcomer can tell what it does and how to run it.
 
 ## Contents
 
@@ -29,8 +29,8 @@ English | [Türkçe](README.tr.md)
 
 ## Structural Analysis and FEM
 
-- [OpenSees](https://github.com/OpenSees/OpenSees#readme) - Reference open source framework for nonlinear structural and geotechnical simulation, developed at UC Berkeley. Base of most academic earthquake engineering research code, and the primary simulation engine used across the Earthquake Engineering section below.
-- [OpenSeesPy](https://github.com/zhuminjie/OpenSeesPy#readme) - Python interpreter build of OpenSees distributed through pip, the usual entry point for scripting OpenSees models today. Ships under its own license terms, read them before commercial redistribution.
+- [OpenSees](https://github.com/OpenSees/OpenSees#readme) - Reference framework for nonlinear structural and geotechnical simulation, developed at UC Berkeley. Base of most academic earthquake engineering research code, and the primary simulation engine used across the Earthquake Engineering section below. The source is public, but the license limits use to noncommercial and internal purposes, commercial distribution needs a separate license.
+- [OpenSeesPy](https://github.com/zhuminjie/OpenSeesPy#readme) - Python interpreter build of OpenSees distributed through pip, the usual entry point for scripting OpenSees models today. Carries the same license restrictions as OpenSees.
 - [opstool](https://github.com/yexiang92/opstool#readme) - Pre processing, post processing and visualization helpers for OpenSeesPy models, including fiber section meshing and result plotting.
 - [ospgrillage](https://github.com/ssp-research/ospgrillage#readme) - Builds bridge deck grillage models on top of OpenSeesPy, with moving load and load combination support.
 - [Pynite](https://github.com/JWock82/Pynite#readme) - 3D structural engineering finite element library in Python for beams, frames, plates, load combinations and P Delta analysis. Formerly named PyNite.
@@ -93,8 +93,8 @@ This category is still thin compared to the rest of the list. If you know of a m
 - [xeokit SDK](https://github.com/xeokit/xeokit-sdk#readme) - WebGL viewer toolkit for large BIM and AEC models in the browser, with support for IFC, glTF and point cloud formats.
 - [BIMserver](https://github.com/opensourceBIM/BIMserver#readme) - Open source BIM model server. Stores and manages IFC models with versioning and multi user collaboration.
 - [xBIM Toolkit](https://github.com/xBimTeam/XbimEssentials#readme) - Open source .NET toolkit for reading, creating, validating and querying IFC building models.
-- [IFC4.x-development](https://github.com/buildingSMART/IFC4.x-development#readme) - buildingSMART's own repository for the IFC4.x specification, the standard that every tool above implements.
-- [Speckle](https://github.com/specklesystems/speckle-server#readme) - Open source data platform for AEC interoperability, streams geometry and data between design tools in real time, often described as version control for BIM.
+- [IFC4.x-development](https://github.com/buildingSMART/IFC4.x-development#readme) - buildingSMART's own repository for the IFC4.x specification, the standard that every tool above implements. Published under CC BY-ND, so modified versions may not be redistributed.
+- [Speckle](https://github.com/specklesystems/speckle-server#readme) - Open source data platform for AEC interoperability, streams geometry and data between design tools in real time, often described as version control for BIM. Apache 2.0, except for two enterprise licensed server modules.
 - [BHoM](https://github.com/BHoM/BHoM#readme) - Buildings and Habitats object Model, a shared data schema and set of adapters that connect structural, environmental and BIM software.
 - [topologicpy](https://github.com/wassimj/topologicpy#readme) - Spatial modeling library that represents buildings as topological cells, faces and graphs for analysis.
 
@@ -184,7 +184,7 @@ This category is still thin compared to the rest of the list. If you know of a m
 - [Global ML Building Footprints](https://github.com/microsoft/GlobalMLBuildingFootprints#readme) - Building footprint polygons for most of the world, derived from satellite imagery.
 - [Open Buildings](https://sites.research.google/gr/open-buildings/) - Building footprints with confidence scores for Africa, South and Southeast Asia, Latin America and the Caribbean.
 - [Overture Maps](https://github.com/OvertureMaps/data#readme) - Open map data with buildings, transportation networks, places and administrative boundaries in cloud native formats.
-- [GEM Global Exposure Model](https://github.com/gem/global_exposure_model#readme) - Country level counts, replacement costs and structural classes of buildings, compiled for seismic risk assessment.
+- [GEM Global Exposure Model](https://github.com/gem/global_exposure_model#readme) - Country level counts, replacement costs and structural classes of buildings, compiled for seismic risk assessment. Licensed CC BY-NC-SA, noncommercial use only.
 - [GEM Global Active Faults](https://github.com/GEMScienceTools/gem-global-active-faults#readme) - Harmonized global database of active fault traces with slip rate and kinematic attributes.
 - [STEAD](https://github.com/smousavi05/STEAD#readme) - Stanford Earthquake Dataset, over one million seismic waveform samples labeled for earthquake and noise detection research.
 - [Engineering Strong Motion Database](https://esm-db.eu/) - Processed strong motion waveforms and metadata for earthquakes in Europe and the Middle East.
@@ -204,7 +204,7 @@ This category is still thin compared to the rest of the list. If you know of a m
 - [Hydro-Informatics](https://github.com/hydro-informatics/jupyter-python-course#readme) - Notebooks behind the Python courses on hydro-informatics.com, written for water resources and hydraulic engineers.
 - [Introduction to GIS Programming](https://github.com/giswqs/geog-312#readme) - University of Tennessee course on GIS programming with Python and open source geospatial libraries.
 - [Automating GIS Processes](https://github.com/Automating-GIS-processes/site#readme) - University of Helsinki course on geospatial analysis in Python, with lessons and exercises as notebooks.
-- [Geocomputation with Python](https://github.com/geocompx/geocompy#readme) - Open source book on working with vector and raster geographic data in Python.
+- [Geocomputation with Python](https://github.com/geocompx/geocompy#readme) - Open book on working with vector and raster geographic data in Python. Licensed CC BY-NC-SA, noncommercial use only.
 
 Open course material for earthquake engineering, structural dynamics and BIM is still missing here, pull requests are welcome.
 
@@ -220,7 +220,7 @@ Open source civil and infrastructure engineering activity in Turkiye is still sc
 - [TSC2018_Design](https://github.com/muhammedsural/TSC2018_Design#readme) - Python package for the Turkish Building Earthquake Code (TBDY 2018) and TS500, covers design spectra, confined concrete models and column confinement design. Last updated in 2024.
 - [sap2000-tbdy2018](https://github.com/krmsari/sap2000-tbdy2018#readme) - Open source Windows application that generates parametric SAP2000 models following TS500 and TBDY 2018. The tool is open, SAP2000 itself is commercial.
 - [2023-Turkey-EQ](https://github.com/yunjunz/2023-Turkey-EQ#readme) - Notebooks and data for the coseismic ground deformation of the 2023 Kahramanmaras earthquake from ALOS-2, LuTan-1 and Sentinel-1 radar imagery.
-- [kandilli-rasathanesi-api](https://github.com/orhanayd/kandilli-rasathanesi-api#readme) - Free, open source, actively maintained API that merges Kandilli Observatory and AFAD earthquake data with real time feeds, GeoJSON output and filtering by city or proximity. The most maintained of the many AFAD and Kandilli data wrapper projects.
+- [kandilli-rasathanesi-api](https://github.com/orhanayd/kandilli-rasathanesi-api#readme) - Free, actively maintained API that merges Kandilli Observatory and AFAD earthquake data with real time feeds, GeoJSON output and filtering by city or proximity. The most maintained of the many AFAD and Kandilli data wrapper projects. The source is public under a custom license that forbids commercial use without permission.
 - [tdvms_py](https://github.com/rdno/tdvms_py#readme) - Small Python script to request continuous seismic waveform data from AFAD's TDVMS network, useful as a building block for seismology and site response research.
 
 ## Related Awesome Lists
@@ -234,4 +234,4 @@ This list intentionally does not duplicate the following. Check them out for adj
 
 ## Contributing
 
-Contributions are welcome. Please read [contributing.md](contributing.md) before submitting a pull request. In short: the project must be open source, must be relevant to civil or infrastructure engineering (or a directly adjacent discipline), and must have documentation good enough that a newcomer can tell what it does and how to run it.
+Contributions are welcome. Please read [contributing.md](contributing.md) before submitting a pull request. In short: the project must be open source (or state its license restriction in the entry), must be relevant to civil or infrastructure engineering (or a directly adjacent discipline), and must have documentation good enough that a newcomer can tell what it does and how to run it.
