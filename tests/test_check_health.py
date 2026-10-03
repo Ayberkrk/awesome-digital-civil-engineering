@@ -142,6 +142,17 @@ class TagTest(unittest.TestCase):
         self.assertTrue(check_health.read_overrides())
 
 
+class NewEntriesTest(unittest.TestCase):
+    def test_only_repositories_missing_from_the_base_are_returned(self):
+        base = [("Tools", "Alpha", "org/alpha")]
+        current = [("Tools", "Alpha", "Org/Alpha"), ("Tools", "Beta", "org/beta")]
+        self.assertEqual(check_health.new_entries(current, base), [("Tools", "Beta", "org/beta")])
+
+    def test_moving_an_entry_to_another_section_is_not_new(self):
+        base = [("Tools", "Alpha", "org/alpha")]
+        self.assertEqual(check_health.new_entries([("Data", "Alpha", "org/alpha")], base), [])
+
+
 class FileReadingTest(unittest.TestCase):
     def write(self, text):
         handle = tempfile.NamedTemporaryFile("w", suffix=".txt", delete=False, encoding="utf-8")

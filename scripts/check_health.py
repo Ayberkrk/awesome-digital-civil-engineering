@@ -9,7 +9,13 @@ Prints a Markdown report and, when running in GitHub Actions, sets the
 `findings` output to the number of problems found.
 
 Usage: GITHUB_TOKEN=... python3 scripts/check_health.py [report.md]
+
+With --new-since BASE_README only the entries that are not in BASE_README are
+checked, the translation is not compared, and the exit status is 1 when a
+problem is found. This is the mode used on pull requests.
 """
+
+import argparse
 
 import json
 import os
@@ -44,10 +50,10 @@ LINK = re.compile(r"^- \[[^\]]+\]\((?P<url>[^)#][^)]*)\)", re.M)
 ENTRY = re.compile(r"^- \[(?P<name>[^\]]+)\]\(https://github\.com/(?P<repo>[\w.-]+/[\w.-]+?)(?:#[^)]*)?\)")
 
 
-def read_entries():
+def read_entries(path=None):
     """Return (section, name, owner/repo) for every GitHub entry in the list."""
     entries, section = [], None
-    for line in README.read_text(encoding="utf-8").splitlines():
+    for line in (path or README).read_text(encoding="utf-8").splitlines():
         if line.startswith("## "):
             section = line[3:].strip()
             continue
@@ -166,10 +172,23 @@ def problems_for(section, repo, data, now, tags=None, overrides=None):
         yield "stale", f"last push on {pushed:%Y-%m-%d}"
 
 
+def new_entries(entries, base_entries):
+    """Return the entries whose repository is not listed in base_entries."""
+    known = {repo.lower() for _, _, repo in base_entries}
+    return [entry for entry in entries if entry[2].lower() not in known]
+
+
 def main():
+    parser = argparse.ArgumentParser(description=__doc__.split("\n")[0])
+    parser.add_argument("report", nargs="?", help="write the Markdown report to this file")
+    parser.add_argument("--new-since", metavar="BASE_README", type=Path)
+    args = parser.parse_args()
+
     now = datetime.now(timezone.utc)
     ignores = read_ignores()
     entries = read_entries()
+    if args.new_since:
+        entries = new_entries(entries, read_entries(args.new_since))
     tags = read_tags()
     overrides = read_overrides()
     findings, errors = [], []
@@ -191,12 +210,13 @@ def main():
                 findings.append((section, name, repo, message))
 
     drift = []
-    if TRANSLATION.exists():
+    if TRANSLATION.exists() and not args.new_since:
         drift = translation_drift(
             README.read_text(encoding="utf-8"), TRANSLATION.read_text(encoding="utf-8")
         )
 
-    lines = [f"Checked {len(entries)} GitHub entries on {now:%Y-%m-%d}.", ""]
+    scope = "new GitHub entries" if args.new_since else "GitHub entries"
+    lines = [f"Checked {len(entries)} {scope} on {now:%Y-%m-%d}.", ""]
     if findings:
         lines += ["| Section | Entry | Problem |", "|---|---|---|"]
         lines += [f"| {s} | [{n}](https://github.com/{r}) | {m} |" for s, n, r, m in findings]
@@ -215,11 +235,13 @@ def main():
     report = "\n".join(lines) + "\n"
 
     print(report, end="")
-    if len(sys.argv) > 1:
-        Path(sys.argv[1]).write_text(report, encoding="utf-8")
+    if args.report:
+        Path(args.report).write_text(report, encoding="utf-8")
     if "GITHUB_OUTPUT" in os.environ:
         with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:
             output.write(f"findings={len(findings) + len(drift)}\n")
+    if args.new_since:
+        return 1 if findings or errors else 0
     # Fail only when the check itself could not run, so API hiccups are visible.
     return 1 if errors and len(errors) == len(entries) else 0
 

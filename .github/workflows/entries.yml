@@ -1,0 +1,27 @@
+name: Check new entries
+
+on:
+  pull_request:
+    paths:
+      - README.md
+
+permissions:
+  contents: read
+
+jobs:
+  new-entries:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check the entries added by this pull request
+        run: |
+          git show "origin/${{ github.base_ref }}:README.md" > "$RUNNER_TEMP/base-readme.md"
+          status=0
+          python3 scripts/check_health.py --new-since "$RUNNER_TEMP/base-readme.md" report.md || status=$?
+          cat report.md >> "$GITHUB_STEP_SUMMARY"
+          exit "$status"

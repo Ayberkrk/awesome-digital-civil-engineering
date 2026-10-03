@@ -89,7 +89,7 @@ Bu dosya [README.md](README.md) dosyasının çevirisidir. İkisi arasında fark
 - [structural_health_monitoring](https://github.com/MarcoParola/structural_health_monitoring#readme) - Nesnelerin interneti sensör verisi ve makine öğrenmesiyle titreşim tabanlı yapısal hasar konumlandırma, otokodlayıcı ve evrişimli modeller içerir. Python, MIT.
 - [FAT-SM](https://github.com/FAT-SM/App#readme) - Yapı izleme için yorulma değerlendirme aracı, gerilme zaman verisini işler, rainflow çevrim sayımı, Miner kuralıyla hasar birikimi ve kalan yorulma ömrü tahmini yapar. C++, GPL-3.0.
 - [munich-bridge-data](https://github.com/imcs-compsim/munich-bridge-data#readme) - Gerçek bir test köprüsünün sensör verisi için görselleştirme ve analiz rutinleri, örnek ivme, birim şekil değiştirme, kuvvet ve eğim ölçümleri ile ön işleme araçları içerir. Python, MIT.
-- [BridgeScan-SHM](https://github.com/okimsz/BridgeScan-SHM#readme) - Gerçek zamanlı köprü yapı sağlığı izleme paneli, telemetri alımı, anomali tespiti, geçmiş sensör verisi saklama, WebSocket uyarıları ve uç cihazda çıkarım hattı içerir. TypeScript, MIT.
+- [BridgeScan-SHM](https://github.com/okimsz/BridgeScan-SHM#readme) - Gerçek zamanlı köprü yapı sağlığı izleme paneli, telemetri alımı, anomali tespiti, geçmiş sensör verisi saklama, WebSocket uyarıları ve uç cihazda çıkarım hattı içerir. README dosyasında MIT yazıyor ancak lisans dosyası yok. TypeScript, MIT.
 
 Bu bölüm listenin geri kalanına göre hâlâ zayıf. Bakımı yapılan, belgelenmiş bir açık kaynak yapı sağlığı izleme projesi biliyorsanız lütfen pull request açın, listenin en çok değer katabileceği bölümlerden biri burası.
 
