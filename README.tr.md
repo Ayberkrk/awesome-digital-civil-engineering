@@ -86,6 +86,10 @@ Bu dosya [README.md](README.md) dosyasının çevirisidir. İkisi arasında fark
 - [SDyPy](https://github.com/sdypy/sdypy#readme) - Python'da yapı dinamiği için çatı paket, modal analiz, frekans tepkisi ve uyarım araçlarını tek ad alanında toplar. Python, MIT.
 - [pyEMA](https://github.com/ladisk/pyEMA#readme) - Ölçülmüş frekans tepki fonksiyonlarından LSCF ve LSFD yöntemleriyle deneysel ve operasyonel modal analiz. Python, MIT.
 - [pyidi](https://github.com/ladisk/pyidi#readme) - Yüksek hızlı kamera görüntülerinden yer değiştirmeleri belirler, yapıların kamera tabanlı titreşim ölçümü için bir temel. Python, MIT.
+- [structural_health_monitoring](https://github.com/MarcoParola/structural_health_monitoring#readme) - Nesnelerin interneti sensör verisi ve makine öğrenmesiyle titreşim tabanlı yapısal hasar konumlandırma, otokodlayıcı ve evrişimli modeller içerir. Python, MIT.
+- [FAT-SM](https://github.com/FAT-SM/App#readme) - Yapı izleme için yorulma değerlendirme aracı, gerilme zaman verisini işler, rainflow çevrim sayımı, Miner kuralıyla hasar birikimi ve kalan yorulma ömrü tahmini yapar. C++, GPL-3.0.
+- [munich-bridge-data](https://github.com/imcs-compsim/munich-bridge-data#readme) - Gerçek bir test köprüsünün sensör verisi için görselleştirme ve analiz rutinleri, örnek ivme, birim şekil değiştirme, kuvvet ve eğim ölçümleri ile ön işleme araçları içerir. Python, MIT.
+- [BridgeScan-SHM](https://github.com/okimsz/BridgeScan-SHM#readme) - Gerçek zamanlı köprü yapı sağlığı izleme paneli, telemetri alımı, anomali tespiti, geçmiş sensör verisi saklama, WebSocket uyarıları ve uç cihazda çıkarım hattı içerir. TypeScript, MIT.
 
 Bu bölüm listenin geri kalanına göre hâlâ zayıf. Bakımı yapılan, belgelenmiş bir açık kaynak yapı sağlığı izleme projesi biliyorsanız lütfen pull request açın, listenin en çok değer katabileceği bölümlerden biri burası.
 
@@ -209,8 +213,11 @@ Bu bölüm listenin geri kalanına göre hâlâ zayıf. Bakımı yapılan, belge
 - [Introduction to GIS Programming](https://github.com/giswqs/geog-312#readme) - Tennessee Üniversitesi'nin Python ve açık kaynak coğrafi kütüphanelerle GIS programlama dersi. CC-BY-4.0.
 - [Automating GIS Processes](https://github.com/Automating-GIS-processes/site#readme) - Helsinki Üniversitesi'nin Python ile coğrafi analiz dersi, dersler ve alıştırmalar not defteri olarak sunulur. MIT.
 - [Geocomputation with Python](https://github.com/geocompx/geocompy#readme) - Python'da vektör ve raster coğrafi veriyle çalışma üzerine açık kitap. Yalnızca ticari olmayan kullanım. CC-BY-NC-SA-4.0.
+- [OpenSeesPy-Tutorials](https://github.com/Ashim-Paudel/OpenSeesPy-Tutorials#readme) - Yapı dinamiği ve deprem mühendisliği için belgelenmiş Python eğitimleri, özdeğer ve modal analizi, zaman tanım alanında analizi, itme analizini, doğrusal olmayan analizi ve yapısal modellemeyi kapsar. MIT.
+- [Response_spectra](https://github.com/lviens/Response_spectra#readme) - Deprem yer hareketi kayıtlarından tepki spektrumu hesaplamak için Python ve MATLAB örnekleri, 2011 Tohoku-Oki depreminin gerçek KiK-net verisini içerir. MIT.
+- [ifcopenshell-notebooks](https://github.com/jakob-beetz/ifcopenshell-notebooks#readme) - IfcOpenShell ile IFC işlemeyi öğrenmek için etkileşimli Jupyter not defterleri, IFC belgelerini, model oluşturma ve değiştirmeyi, içe ve dışa aktarmayı ve IFC'nin iç yapısını kapsar. MIT.
 
-Deprem mühendisliği, yapı dinamiği ve BIM için açık ders malzemesi burada hâlâ eksik, pull request'ler memnuniyetle karşılanır.
+Deprem mühendisliği, yapı dinamiği ve BIM için açık ders malzemesi burada hâlâ gelişiyor. Belgelenmiş, açık lisanslı bir kaynak biliyorsanız pull request'ler memnuniyetle karşılanır.
 
 ## Türkiye
 
