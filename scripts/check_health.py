@@ -2,7 +2,8 @@
 """Check the health of the GitHub projects linked from README.md.
 
 Reports entries that are archived, have moved to a new address, have no
-detectable license, or have not been pushed to for STALE_YEARS years.
+detectable license, or have not been pushed to for STALE_YEARS years. Also
+reports entries that differ between README.md and its translation.
 Prints a Markdown report and, when running in GitHub Actions, sets the
 `findings` output to the number of problems found.
 
@@ -20,6 +21,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 README = ROOT / "README.md"
+TRANSLATION = ROOT / "README.tr.md"
 IGNORE_FILE = ROOT / ".github" / "health-ignore.txt"
 
 STALE_YEARS = 2
@@ -30,6 +32,7 @@ STALE_EXEMPT_SECTIONS = {"Open Datasets"}
 LICENSE_EXEMPT_SECTIONS = {"Related Awesome Lists"}
 
 CHECKS = ("archived", "moved", "license", "stale")
+LINK = re.compile(r"^- \[[^\]]+\]\((?P<url>[^)#][^)]*)\)", re.M)
 ENTRY = re.compile(r"^- \[(?P<name>[^\]]+)\]\(https://github\.com/(?P<repo>[\w.-]+/[\w.-]+?)(?:#[^)]*)?\)")
 
 
@@ -60,6 +63,15 @@ def read_ignores():
             sys.exit(f"{IGNORE_FILE.name}:{number}: expected 'owner/repo check reason'")
         ignores.add((parts[0].lower(), parts[1]))
     return ignores
+
+
+def translation_drift(source, translation):
+    """Return messages for entry links present in only one of the two texts."""
+    original = [match["url"] for match in LINK.finditer(source)]
+    translated = [match["url"] for match in LINK.finditer(translation)]
+    drift = [f"missing from `{TRANSLATION.name}`: {url}" for url in original if url not in translated]
+    drift += [f"only in `{TRANSLATION.name}`: {url}" for url in translated if url not in original]
+    return drift
 
 
 def fetch(repo):
@@ -109,6 +121,12 @@ def main():
             if (repo.lower(), check) not in ignores:
                 findings.append((section, name, repo, message))
 
+    drift = []
+    if TRANSLATION.exists():
+        drift = translation_drift(
+            README.read_text(encoding="utf-8"), TRANSLATION.read_text(encoding="utf-8")
+        )
+
     lines = [f"Checked {len(entries)} GitHub entries on {now:%Y-%m-%d}.", ""]
     if findings:
         lines += ["| Section | Entry | Problem |", "|---|---|---|"]
@@ -118,7 +136,10 @@ def main():
             "Fix or remove each entry, or accept it by adding a line with a reason to "
             "`.github/health-ignore.txt`.",
         ]
-    else:
+    if drift:
+        lines += [""] if findings else []
+        lines += ["The translation is out of sync:", ""] + [f"- {d}" for d in drift]
+    if not findings and not drift:
         lines.append("No problems found.")
     if errors:
         lines += ["", "Could not check:", ""] + [f"- {e}" for e in errors]
@@ -129,7 +150,7 @@ def main():
         Path(sys.argv[1]).write_text(report, encoding="utf-8")
     if "GITHUB_OUTPUT" in os.environ:
         with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:
-            output.write(f"findings={len(findings)}\n")
+            output.write(f"findings={len(findings) + len(drift)}\n")
     # Fail only when the check itself could not run, so API hiccups are visible.
     return 1 if errors and len(errors) == len(entries) else 0
 
