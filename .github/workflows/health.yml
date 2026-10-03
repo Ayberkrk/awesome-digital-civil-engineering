@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "0 7 1 * *"
   workflow_dispatch:
+    inputs:
+      test_issue_step:
+        description: Skip the check and exercise the report issue with a sample report
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -15,24 +20,26 @@ jobs:
     env:
       GH_TOKEN: ${{ github.token }}
       GITHUB_TOKEN: ${{ github.token }}
-      TITLE: List health report
     steps:
       - uses: actions/checkout@v4
 
       - name: Check linked repositories
         id: check
+        if: ${{ !inputs.test_issue_step }}
         run: python3 scripts/check_health.py report.md
 
       - name: Open, update or close the report issue
+        if: ${{ !inputs.test_issue_step }}
+        run: scripts/report_issue.sh "List health report" "${{ steps.check.outputs.findings }}" report.md
+
+      # Runs the create, update and close paths once against a separate issue,
+      # so the real report is never touched.
+      - name: Exercise the report issue with a sample report
+        if: ${{ inputs.test_issue_step }}
         run: |
-          number=$(gh issue list --state open --search "in:title \"$TITLE\"" --json number,title \
-            --jq "map(select(.title == \"$TITLE\")) | .[0].number // empty")
-          if [ "${{ steps.check.outputs.findings }}" != "0" ]; then
-            if [ -n "$number" ]; then
-              gh issue edit "$number" --body-file report.md
-            else
-              gh issue create --title "$TITLE" --body-file report.md
-            fi
-          elif [ -n "$number" ]; then
-            gh issue close "$number" --comment "All entries pass the health check."
-          fi
+          title="List health report (test)"
+          printf 'Sample report from a manual test run. Safe to ignore.\n' > sample.md
+          scripts/report_issue.sh "$title" 1 sample.md
+          printf 'Sample report, second pass.\n' >> sample.md
+          scripts/report_issue.sh "$title" 1 sample.md
+          scripts/report_issue.sh "$title" 0 sample.md

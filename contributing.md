@@ -49,6 +49,18 @@ npm run lint
 
 The link checker runs separately on pull requests and every Tuesday.
 
+On a branch that has not been pushed yet, the lint run can fail with `Awesome list must reside in a valid git repository`. The check looks up the remote of the current branch, which is only set after the first push. Push the branch with `git push -u origin <branch>`, or set the remote yourself, and run the lint again:
+
+```bash
+git config branch.<branch>.remote origin
+```
+
+If you change `scripts/check_health.py` or `.github/health-ignore.txt`, run the tests as well:
+
+```bash
+python3 -m unittest discover -s tests -v
+```
+
 ## License
 
 The list itself (the selection, arrangement and descriptions in this repository) is released under [CC0 1.0](LICENSE). This does not extend to the third party projects it links to, each of which remains under its own license.

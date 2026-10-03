@@ -39,7 +39,7 @@ English | [Türkçe](README.tr.md)
 - [section-properties](https://github.com/robbievanleeuwen/section-properties#readme) - Finite element analysis of arbitrary cross sections in Python. Computes warping constants, shear areas and other properties most standard tools do not expose.
 - [concrete-properties](https://github.com/robbievanleeuwen/concrete-properties#readme) - Section analysis for reinforced concrete, moment curvature and interaction diagrams, built on top of section-properties.
 - [COMPAS](https://github.com/compas-dev/compas#readme) - Computational framework for research and collaboration in architecture, structures and digital fabrication, with CAD integrations for Rhino, Grasshopper and Blender.
-- [CalculiX](http://www.calculix.de/) - Free finite element package for linear and nonlinear structural, dynamic and thermal analysis with an Abaqus compatible input format.
+- [CalculiX](https://www.calculix.de/) - Free finite element package for linear and nonlinear structural, dynamic and thermal analysis with an Abaqus compatible input format.
 - [SfePy](https://github.com/sfepy/sfepy#readme) - Simple finite elements in Python, a general purpose FEM solver for structural, mechanical and coupled physics problems.
 - [DOLFINx](https://github.com/FEniCS/dolfinx#readme) - Computational core of the FEniCS project, solves partial differential equations with the finite element method from a high level Python or C++ interface.
 - [Kratos Multiphysics](https://github.com/KratosMultiphysics/Kratos#readme) - Parallel multiphysics framework from CIMNE with structural, geomechanics, fluid and fluid structure interaction applications.

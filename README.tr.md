@@ -41,7 +41,7 @@ Bu dosya [README.md](README.md) dosyasının çevirisidir. İkisi arasında fark
 - [section-properties](https://github.com/robbievanleeuwen/section-properties#readme) - Python'da keyfi kesitlerin sonlu eleman analizi. Çarpılma sabitleri, kayma alanları ve çoğu standart aracın vermediği diğer özellikleri hesaplar.
 - [concrete-properties](https://github.com/robbievanleeuwen/concrete-properties#readme) - Betonarme kesit analizi, moment eğrilik ve etkileşim diyagramları, section-properties üzerine kurulu.
 - [COMPAS](https://github.com/compas-dev/compas#readme) - Mimarlık, yapı ve dijital üretim alanlarında araştırma ve iş birliği için hesaplamalı çatı, Rhino, Grasshopper ve Blender için CAD bütünleştirmeleriyle.
-- [CalculiX](http://www.calculix.de/) - Doğrusal ve doğrusal olmayan yapısal, dinamik ve ısıl analiz için ücretsiz sonlu eleman paketi, Abaqus uyumlu girdi biçimi kullanır.
+- [CalculiX](https://www.calculix.de/) - Doğrusal ve doğrusal olmayan yapısal, dinamik ve ısıl analiz için ücretsiz sonlu eleman paketi, Abaqus uyumlu girdi biçimi kullanır.
 - [SfePy](https://github.com/sfepy/sfepy#readme) - Python'da basit sonlu elemanlar, yapısal, mekanik ve bağlaşık fizik problemleri için genel amaçlı bir çözücü.
 - [DOLFINx](https://github.com/FEniCS/dolfinx#readme) - FEniCS projesinin hesaplama çekirdeği, kısmi diferansiyel denklemleri üst düzey bir Python veya C++ arayüzünden sonlu eleman yöntemiyle çözer.
 - [Kratos Multiphysics](https://github.com/KratosMultiphysics/Kratos#readme) - CIMNE tarafından geliştirilen paralel çoklu fizik çatısı, yapısal, jeomekanik, akışkan ve akışkan yapı etkileşimi uygulamalarıyla.
