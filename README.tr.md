@@ -130,6 +130,7 @@ Bu bölüm listenin geri kalanına göre hâlâ zayıf. Bakımı yapılan, belge
 - [laspy](https://github.com/laspy/laspy#readme) - Python'da LAS ve LAZ lidar dosyalarını okur, değiştirir ve yazar. Python, BSD-2-Clause.
 - [Open3D](https://github.com/isl-org/Open3D#readme) - Nokta bulutları ve ağ modelleri için çakıştırma, yüzey oluşturma ve görselleştirme içeren 3B veri işleme kütüphanesi. C++, MIT.
 - [CloudCompare](https://github.com/CloudCompare/CloudCompare#readme) - Nokta bulutu ve ağ modeli işleme için masaüstü uygulaması, buluttan buluta karşılaştırma ve deformasyon ölçümünde yaygın biçimde kullanılır. C++, GPL-2.0-or-later.
+- [py4dgeo](https://github.com/3dgeo-heidelberg/py4dgeo#readme) - Topografik nokta bulutlarının farklı zamanlardaki ölçümleri arasında değişim analizi için kütüphane, heyelan ve erozyon izlemede kullanılan M3C2 mesafe yöntemini içerir. Python, MIT.
 - [Potree](https://github.com/potree/potree#readme) - Tarayıcıda çok büyük nokta bulutları için WebGL görüntüleyici. JavaScript, BSD-2-Clause.
 
 ## Coğrafi bilgi sistemleri ve uzaktan algılama
@@ -143,6 +144,9 @@ Bu bölüm listenin geri kalanına göre hâlâ zayıf. Bakımı yapılan, belge
 - [Rasterio](https://github.com/rasterio/rasterio#readme) - GDAL üzerine kurulu, coğrafi raster veri setlerini okur ve yazar. Python, BSD-3-Clause.
 - [leafmap](https://github.com/opengeos/leafmap#readme) - Jupyter'da az kodla etkileşimli haritalama ve coğrafi analiz. Birkaç haritalama altyapısını tek bir arayüz altında toplar. Python, MIT.
 - [TorchGeo](https://github.com/torchgeo/torchgeo#readme) - Coğrafi veriye ve uydu verisine derin öğrenme uygulamak için veri setleri, örnekleyiciler, dönüşümler ve önceden eğitilmiş modeller. Python, MIT.
+- [ISCE3](https://github.com/isce-framework/isce3#readme) - JPL tarafından geliştirilen interferometrik SAR işleme yazılımı, uydu radar görüntülerinden deformasyon ve topoğrafya ürünleri üretir. Python, Apache-2.0.
+- [MintPy](https://github.com/insarlab/MintPy#readme) - Tekrarlı geçiş SAR verisinden milimetre ölçeğinde zemin ve yapı hareketi için InSAR zaman serisi analizi, çökme, heyelan, baraj ve dolgu izlemede kullanılır. Python, GPL-3.0-or-later.
+- [PyGMTSAR](https://github.com/AlexeyPechnikov/pygmtsar#readme) - Python ile Sentinel-1 interferometrisi ve SBAS zaman serisi, otomatik veri indirme ve deformasyon haritalama not defterleriyle birlikte gelir. Python, BSD-3-Clause.
 
 ## Su ve hidrolik
 
