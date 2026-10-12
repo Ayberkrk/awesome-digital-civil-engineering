@@ -128,6 +128,7 @@ This category is still thin compared to the rest of the list. If you know of a m
 - [laspy](https://github.com/laspy/laspy#readme) - Reads, modifies and writes LAS and LAZ lidar files in Python. Python, BSD-2-Clause.
 - [Open3D](https://github.com/isl-org/Open3D#readme) - Library for 3D data processing with registration, surface reconstruction and visualization for point clouds and meshes. C++, MIT.
 - [CloudCompare](https://github.com/CloudCompare/CloudCompare#readme) - Desktop application for point cloud and mesh processing, widely used for cloud to cloud comparison and deformation measurement. C++, GPL-2.0-or-later.
+- [py4dgeo](https://github.com/3dgeo-heidelberg/py4dgeo#readme) - Library for change analysis between epochs of topographic point clouds, including the M3C2 distance method used in landslide and erosion monitoring. Python, MIT.
 - [Potree](https://github.com/potree/potree#readme) - WebGL renderer for very large point clouds in the browser. JavaScript, BSD-2-Clause.
 
 ## Geospatial and Remote Sensing
@@ -141,6 +142,9 @@ This category is still thin compared to the rest of the list. If you know of a m
 - [Rasterio](https://github.com/rasterio/rasterio#readme) - Reads and writes geospatial raster datasets, built on GDAL. Python, BSD-3-Clause.
 - [leafmap](https://github.com/opengeos/leafmap#readme) - Interactive mapping and geospatial analysis with minimal code in Jupyter. Wraps several mapping backends under one API. Python, MIT.
 - [TorchGeo](https://github.com/torchgeo/torchgeo#readme) - Datasets, samplers, transforms and pretrained models for applying deep learning to geospatial and satellite data. Python, MIT.
+- [ISCE3](https://github.com/isce-framework/isce3#readme) - Interferometric SAR processing from JPL for generating deformation and topography products from satellite radar scenes. Python, Apache-2.0.
+- [MintPy](https://github.com/insarlab/MintPy#readme) - InSAR time series analysis for millimeter-scale ground and structure motion from repeat-pass SAR, used for subsidence, landslides, dams and embankments. Python, GPL-3.0.
+- [PyGMTSAR](https://github.com/AlexeyPechnikov/pygmtsar#readme) - Sentinel-1 interferometry and SBAS time series in Python, with automated data download and notebooks for deformation mapping. Python, BSD-3-Clause.
 
 ## Water and Hydraulics
 
