@@ -143,7 +143,7 @@ This category is still thin compared to the rest of the list. If you know of a m
 - [leafmap](https://github.com/opengeos/leafmap#readme) - Interactive mapping and geospatial analysis with minimal code in Jupyter. Wraps several mapping backends under one API. Python, MIT.
 - [TorchGeo](https://github.com/torchgeo/torchgeo#readme) - Datasets, samplers, transforms and pretrained models for applying deep learning to geospatial and satellite data. Python, MIT.
 - [ISCE3](https://github.com/isce-framework/isce3#readme) - Interferometric SAR processing from JPL for generating deformation and topography products from satellite radar scenes. Python, Apache-2.0.
-- [MintPy](https://github.com/insarlab/MintPy#readme) - InSAR time series analysis for millimeter-scale ground and structure motion from repeat-pass SAR, used for subsidence, landslides, dams and embankments. Python, GPL-3.0.
+- [MintPy](https://github.com/insarlab/MintPy#readme) - InSAR time series analysis for millimeter-scale ground and structure motion from repeat-pass SAR, used for subsidence, landslides, dams and embankments. Python, GPL-3.0-or-later.
 - [PyGMTSAR](https://github.com/AlexeyPechnikov/pygmtsar#readme) - Sentinel-1 interferometry and SBAS time series in Python, with automated data download and notebooks for deformation mapping. Python, BSD-3-Clause.
 
 ## Water and Hydraulics

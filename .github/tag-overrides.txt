@@ -44,7 +44,7 @@ geocompx/geocompy                             license   CC-BY-NC-SA-4.0
 DemirAydin/AFAD-TADAS-EQ-Record-Processing    license   MIT
 Ashim-Paudel/OpenSeesPy-Tutorials             license   MIT
 okimsz/BridgeScan-SHM                         license   MIT
-insarlab/MintPy                               license   GPL-3.0
+insarlab/MintPy                               license   GPL-3.0-or-later
 isce-framework/isce3                          license   Apache-2.0
 
 # Primary language reported by GitHub is notebooks, docs or assets, not the code people use.
