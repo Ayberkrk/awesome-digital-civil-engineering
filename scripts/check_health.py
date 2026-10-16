@@ -44,8 +44,14 @@ LICENSE_ONLY_SECTIONS = {"Open Datasets", "Learning Resources"}
 UNTAGGED_SECTIONS = {"Related Awesome Lists"}
 
 CHECKS = ("archived", "moved", "license", "stale", "tag")
-LICENSE_TAG = re.compile(r"MIT|Unlicense|Custom|[A-Za-z0-9]+(-[A-Za-z0-9.]+)+")
-LANGUAGE_TAG = re.compile(r"[A-Za-z+#]+")
+# A tag is recognized by its shape rather than by a list of known names: the
+# license is one SPDX-like token, the language may contain spaces and hyphens
+# ("Jupyter Notebook", "Objective-C"). A license without a digit or hyphen must
+# be all capitals (MIT, ISC) or one of the few mixed-case identifiers, so that
+# an ordinary one-word last sentence is not mistaken for a tag.
+LICENSE_TAG = re.compile(r"[A-Z0-9][A-Za-z0-9.+-]*")
+LICENSE_WORDS = {"Custom", "PostgreSQL", "Unlicense", "Zlib"}
+LANGUAGE_TAG = re.compile(r"[A-Za-z0-9+#][A-Za-z0-9+#. -]*")
 LINK = re.compile(r"^- \[[^\]]+\]\((?P<url>[^)#][^)]*)\)", re.M)
 ENTRY = re.compile(r"^- \[(?P<name>[^\]]+)\]\(https://github\.com/(?P<repo>[\w.-]+/[\w.-]+?)(?:#[^)]*)?\)")
 
@@ -73,11 +79,18 @@ def read_tags(path=None):
     return tags
 
 
+def is_license_token(text):
+    """Is this text shaped like a license identifier such as MIT or GPL-2.0-or-later?"""
+    if not LICENSE_TAG.fullmatch(text):
+        return False
+    return any(c.isdigit() or c == "-" for c in text) or text.isupper() or text in LICENSE_WORDS
+
+
 def current_tag(line):
     """Return the trailing "Language, License" sentence of an entry, or None."""
     sentence = line.rstrip().rstrip(".").rsplit(". ", 1)[-1]
     parts = sentence.split(", ")
-    if len(parts) > 2 or not LICENSE_TAG.fullmatch(parts[-1]):
+    if len(parts) > 2 or not is_license_token(parts[-1]):
         return None
     if len(parts) == 2 and not LANGUAGE_TAG.fullmatch(parts[0]):
         return None

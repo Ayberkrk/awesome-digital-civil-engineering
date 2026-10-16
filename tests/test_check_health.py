@@ -8,6 +8,7 @@ from unittest import mock
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 
 import check_health  # noqa: E402
+import update_tags  # noqa: E402
 
 NOW = datetime(2026, 10, 3, tzinfo=timezone.utc)
 
@@ -127,9 +128,14 @@ class TagTest(unittest.TestCase):
         self.assertEqual(check_health.current_tag("- [A](https://x.org) - Does a thing. CC-BY-4.0."), "CC-BY-4.0")
 
     def test_current_tag_ignores_ordinary_sentences(self):
-        for ending in ("Formerly named PyNite.", "In Spanish.", "Last updated in 2024.", "Built on section-properties, see above."):
+        for ending in ("Formerly named PyNite.", "In Spanish.", "Last updated in 2024.", "Built on section-properties, see above.", "Deprecated.", "Unmaintained."):
             line = f"- [A](https://github.com/o/a#readme) - Does a thing. {ending}"
             self.assertIsNone(check_health.current_tag(line), ending)
+
+    def test_current_tag_reads_languages_and_licenses_outside_the_old_pattern(self):
+        for tag in ("Python, ISC", "Jupyter Notebook, MIT", "C, Zlib", "Python, 0BSD", "Objective-C, MIT", "WTFPL"):
+            line = f"- [A](https://github.com/o/a#readme) - Does a thing. {tag}."
+            self.assertEqual(check_health.current_tag(line), tag)
 
     def test_wrong_or_missing_tag_is_reported(self):
         data = repo_data(language="Python")
@@ -197,6 +203,25 @@ class FileReadingTest(unittest.TestCase):
 
     def test_repository_ignore_file_is_valid(self):
         self.assertTrue(check_health.read_ignores())
+
+
+
+class RetagTest(unittest.TestCase):
+    LINE = "- [A](https://github.com/o/a#readme) - Does a thing."
+
+    def test_appends_a_missing_tag(self):
+        self.assertEqual(update_tags.retag(self.LINE, "Python, ISC"), f"{self.LINE} Python, ISC.")
+
+    def test_replaces_an_existing_tag(self):
+        self.assertEqual(update_tags.retag(f"{self.LINE} Python, MIT.", "Python, ISC"), f"{self.LINE} Python, ISC.")
+
+    def test_removes_the_tag_when_none_is_wanted(self):
+        self.assertEqual(update_tags.retag(f"{self.LINE} Python, MIT.", ""), self.LINE)
+
+    def test_is_idempotent(self):
+        for tag in ("Python, ISC", "Jupyter Notebook, MIT", "Objective-C, 0BSD"):
+            once = update_tags.retag(self.LINE, tag)
+            self.assertEqual(update_tags.retag(once, tag), once)
 
 
 if __name__ == "__main__":
