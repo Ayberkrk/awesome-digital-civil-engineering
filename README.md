@@ -44,6 +44,7 @@ English | [Türkçe](README.tr.md)
 - [CalculiX](https://www.calculix.de/) - Free finite element package for linear and nonlinear structural, dynamic and thermal analysis with an Abaqus compatible input format.
 - [SfePy](https://github.com/sfepy/sfepy#readme) - Simple finite elements in Python, a general purpose FEM solver for structural, mechanical and coupled physics problems. Python, BSD-3-Clause.
 - [DOLFINx](https://github.com/FEniCS/dolfinx#readme) - Computational core of the FEniCS project, solves partial differential equations with the finite element method from a high level Python or C++ interface. C++, LGPL-3.0.
+- [AgentFEM](https://github.com/haoming-luo/agentfem#readme) - FEniCSx-based finite element workflows for structural, thermal and vibration analysis, with editable Python models, pre-run checks and recorded results. Its command-line interface supports both researchers and AI agents; computation requires a local scientific runtime. Python, Apache-2.0.
 - [Kratos Multiphysics](https://github.com/KratosMultiphysics/Kratos#readme) - Parallel multiphysics framework from CIMNE with structural, geomechanics, fluid and fluid structure interaction applications. C++, BSD-4-Clause.
 - [XC](https://github.com/xcfem/xc#readme) - Finite element package written specifically for civil engineering structures, with code checking routines for concrete and steel members. C++, GPL-3.0.
 
