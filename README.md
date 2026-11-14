@@ -249,3 +249,11 @@ This list intentionally does not duplicate the following. Check them out for adj
 ## Contributing
 
 Contributions are welcome. Please read [contributing.md](contributing.md) before submitting a pull request. In short: the project must be open source (or state its license restriction in the entry), must be relevant to civil or infrastructure engineering (or a directly adjacent discipline), and must have documentation good enough that a newcomer can tell what it does and how to run it.
+
+Thanks to everyone who has contributed:
+
+<a href="https://github.com/Ayberkrk/awesome-digital-civil-engineering/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Ayberkrk/awesome-digital-civil-engineering" alt="Contributors" />
+</a>
+
+Looking for a place to start? The [good first issues](https://github.com/Ayberkrk/awesome-digital-civil-engineering/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) list sections that need more entries.
