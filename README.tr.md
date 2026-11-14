@@ -250,3 +250,11 @@ Bu liste aşağıdakileri bilerek tekrarlamaz. Komşu kapsamlar için onlara gö
 ## Katkı
 
 Katkılar memnuniyetle karşılanır. Pull request göndermeden önce lütfen [contributing.md](contributing.md) dosyasını okuyun. Kısaca: proje açık kaynak olmalı (ya da lisans kısıtı girişte belirtilmeli), inşaat veya altyapı mühendisliğiyle (ya da doğrudan komşu bir disiplinle) ilgili olmalı ve yeni başlayan birinin ne yaptığını ve nasıl çalıştırılacağını anlayabileceği kadar iyi belgelenmiş olmalıdır. Yeni girişleri yalnızca İngilizce [README.md](README.md) dosyasına eklemeniz yeterlidir, Türkçe çeviri bakımcılar tarafından güncellenir.
+
+Katkıda bulunan herkese teşekkürler:
+
+<a href="https://github.com/Ayberkrk/awesome-digital-civil-engineering/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Ayberkrk/awesome-digital-civil-engineering" alt="Contributors" />
+</a>
+
+Nereden başlayacağınızı mı arıyorsunuz? [Başlangıç için uygun issue'lar](https://github.com/Ayberkrk/awesome-digital-civil-engineering/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) daha fazla girdiye ihtiyaç duyan bölümleri listeliyor.
